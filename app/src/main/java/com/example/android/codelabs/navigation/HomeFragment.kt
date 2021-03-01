@@ -61,8 +61,9 @@ class HomeFragment : Fragment() {
         }
 
         navigate_action_button.setOnClickListener {
-            findNavController().navigate(R.id.next_action)
-        }
+//            findNavController().navigate(R.id.next_action)
+            findNavController().navigate(HomeFragmentDirections.nextAction())
+    }
 
         //TODO STEP 5 - Set an OnClickListener, using Navigation.createNavigateOnClickListener()
 //        val button = view.findViewById<Button>(R.id.navigate_destination_button)
